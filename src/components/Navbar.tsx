@@ -6,11 +6,9 @@ import { Disclosure } from "@headlessui/react";
 
 export const Navbar = () => {
   const navigation = [
-    "Product",
     "Features",
     "Pricing",
     "Company",
-    "Blog",
   ];
 
   return (
@@ -24,15 +22,14 @@ export const Navbar = () => {
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <Image
-                        src="/img/logo.svg"
+                      <img
+                        src="/img/arscon.png"
                         alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        
+                        className="w-24 h-auto"
                       />
                     </span>
-                    <span>Nextly</span>
+                    <span className="font-bold">Arscon</span>
                   </span>
                 </Link>
 
