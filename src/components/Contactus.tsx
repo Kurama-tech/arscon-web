@@ -4,73 +4,63 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Contactus() {
-    
-    return (
-        <div
-            id="contact"
-            className="relative border-t border-solid border-indigo-500">
-            <Container>
-                <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-0 mx-auto mt-0 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-2">
-                    <div className="lg:col-span-1">
-                        <div>
-                            {" "}
-                            <Link
-                                href="/"
-                                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                            
-                                <img
-                                    src={"/img/arscon.png"}
-                                    className="w-20 h-auto"
-                                    alt="logo"
-                                />
-                                <span className="font-bold text-indigo-500 dark:text-gray-100">
-                                    Arscon Connect
-                                </span>
-                            </Link>
-                        </div>
+  return (
+    <div id="contact" className="relative ">
+      <Container>
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-0 mx-auto mt-0  lg:grid-cols-2">
+          <div className="lg:col-span-1">
+            <div
+              className="text-secondary-900 "
+              style={{ boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4896433244967!2d77.6470045!3d13.068124700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19fbd6d5c2a5%3A0x1bc11859d70a3ea7!2s1st%20Cross%20St%2C%20DR%20Bendre%20Layout%2C%20Narayanapura%2C%20Bengaluru%2C%20Karnataka%20560077!5e0!3m2!1sen!2sin!4v1720273684390!5m2!1sen!2sin"
+                //   width="600"
+                height="400"
+                className="w-full"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
 
-                        <div className="max-w-md ms-4 text-gray-500 dark:text-gray-400">
-                            7, KNO-12/10, LBS NAGAR, K. NARAYANAPURA, Kothanur, Bangalore
-                            North, Bangalore- 560077, Karnataka
-                        </div>
-
-                        {/* <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44">
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
+          <div className="flex flex-col w-full -mt-2 -ml-3 lg:ml-0">
+            <div className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 ">
+              <div>
+                <img
+                  src="/img/location-icon.svg"
+                  alt="loc"
+                  className="w-12 h-auto"
                 />
-              </a>
-            </div> */}
-                    </div>
-
-                    <div className="flex items-center justify-center w-full -mt-2 -ml-3 lg:ml-0">
-                       <div>ddddd</div>
-                       <div>dgdeded</div>
-                    </div>
-
-                    
-                </div>
-
-                <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-                    {/* Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a> */}
-                    © 2024 Arscon Connect. All rights reserved. Made with ❤️ by mamun.ae
-                </div>
-            </Container>
-           
+              </div>
+              <div className="ms-4">
+                7, KNO-12/10, LBS NAGAR, K. NARAYANAPURA, Kothanur, Bangalore
+                North, Bangalore- 560077, Karnataka
+              </div>
+            </div>
+            <div className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 ">
+              <span>
+                <img
+                  src="/img/phone-icon.svg"
+                  alt="phone"
+                  className="w-8 h-auto"
+                />
+              </span>
+              <span className="ms-4">+91 8884646746</span>
+            </div>
+            <div className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 ">
+              <span>
+                <img
+                  src="/img/email-icon.svg"
+                  alt="email"
+                  className="w-8 h-auto"
+                />
+              </span>
+              <span className="ms-4">info@arscon.co.in</span>
+            </div>
+          </div>
         </div>
-    );
+      </Container>
+    </div>
+  );
 }

@@ -6,6 +6,7 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
+import { Contactus } from "@/components/Contactus";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 export default function Home() {
@@ -14,9 +15,13 @@ export default function Home() {
       <Hero />
       <SectionTitle
         preTitle="Arscon Benefits"
-        title=" Why should you use Arscon Connect"
-      >
-       Arscon is a cutting-edge business directory app designed to revolutionize the way you discover, connect with, and manage business interactions. Harnessing the power of artificial intelligence, BusinessFinder AI offers personalized recommendations, intelligent search capabilities, and seamless integration with various services to provide an unparalleled user experience.
+        title=" Why should you use Arscon Connect">
+        Arscon is a cutting-edge business directory app designed to
+        revolutionize the way you discover, connect with, and manage business
+        interactions. Harnessing the power of artificial intelligence,
+        BusinessFinder AI offers personalized recommendations, intelligent
+        search capabilities, and seamless integration with various services to
+        provide an unparalleled user experience.
       </SectionTitle>
 
       <Benefits data={benefitOne} />
@@ -42,6 +47,7 @@ export default function Home() {
 
       <Testimonials />
 
+      <Contactus />
       {/* <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
