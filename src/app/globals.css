@@ -10,4 +10,7 @@
     @apply dark:bg-trueGray-900;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 

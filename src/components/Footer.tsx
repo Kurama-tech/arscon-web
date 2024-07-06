@@ -4,43 +4,55 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  // const navigation = ["Home", "Features", "Contact",];
+  // const legal = ["Terms", "Privacy", "Legal"];
+
+  const navigation = [
+    { name: "Home", href: "#navbar" },
+    { name: "Features", href: "#features" },
+    { name: "Contact Us", href: "#contact" },
+  ];
   return (
-    <div className="relative">
+    <div
+      id="contact"
+      className="relative border-t border-solid border-indigo-500">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-0 mx-auto mt-0 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-2">
+          <div className="lg:col-span-1">
             <div>
               {" "}
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
-              >
-                <Image
-                  src="/img/logo.svg"
+                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                {/* <Image
+                  src="/img/arscon.png"
                   alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
+                  width="16"
+                  height="16"
+                  className="w-16 h-auto"
+                /> */}
+                <img
+                  src={"/img/arscon.png"}
+                  className="w-20 h-auto"
+                  alt="logo"
                 />
-                <span>Nextly</span>
+                <span className="font-bold text-indigo-500 dark:text-gray-100">
+                  Arscon Connect
+                </span>
               </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
+            <div className="max-w-md ms-4 text-gray-500 dark:text-gray-400">
+              7, KNO-12/10, LBS NAGAR, K. NARAYANAPURA, Kothanur, Bangalore
+              North, Bangalore- 560077, Karnataka
             </div>
 
-            <div className="mt-5">
+            {/* <div className="mt-5">
               <a
                 href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
                 target="_blank"
                 rel="noopener"
-                className="relative block w-44"
-              >
+                className="relative block w-44">
                 <Image
                   src="/img/vercel.svg"
                   alt="Powered by Vercel"
@@ -48,59 +60,53 @@ export function Footer() {
                   height="44"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
 
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
+          <div className="flex items-center justify-center w-full -mt-2 -ml-3 lg:ml-0">
+            {navigation.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className="px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                {item.name}
+              </Link>
+            ))}
           </div>
-          <div>
+
+          {/* <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
                 <Link
                   key={index}
                   href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                   {item}
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="">
+          </div> */}
+          {/* <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://twitter.com/web3templates"
                 target="_blank"
-                rel="noopener"
-              >
+                rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
               <a
                 href="https://facebook.com/web3templates"
                 target="_blank"
-                rel="noopener"
-              >
+                rel="noopener">
                 <span className="sr-only">Facebook</span>
                 <Facebook />
               </a>
               <a
                 href="https://instagram.com/web3templates"
                 target="_blank"
-                rel="noopener"
-              >
+                rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
@@ -109,22 +115,23 @@ export function Footer() {
                 <Linkedin />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
+          {/* Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <a href="https://web3templates.com/" target="_blank" rel="noopener">
             Web3Templates.
           </a>{" "}
           Illustrations from{" "}
           <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
             Glazestock
-          </a>
+          </a> */}
+          © 2024 Arscon Connect. All rights reserved. Made with ❤️ by mamun.ae
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }
