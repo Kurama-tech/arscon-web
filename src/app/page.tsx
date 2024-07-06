@@ -37,8 +37,7 @@ export default function Home() {
         preTitle="Testimonials"
         title="Here's what our customers said"
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        Discover how Arscon Connect has transformed business operations for our users. Our AI-powered directory app enhances visibility, boosts customer engagement, and provides valuable insights. Read on to see the impact on their professional lives.
       </SectionTitle>
 
       <Testimonials />

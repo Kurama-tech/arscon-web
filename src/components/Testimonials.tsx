@@ -13,42 +13,41 @@ export const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+            Arscon Connect's <Mark>personalized recommendations</Mark>
+            and targeted ads have greatly increased our visibility and engagement. Highly recommended!
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Ramesh K"
+              title="Small Business Owner"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+            The AI <Mark>insights and analytics</Mark>
+               from Arscon Connect have improved our campaign performance and customer satisfaction. Essential for our team!
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Priya S"
+              title="Marketing Manager"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+            The <Mark>intelligent search</Mark> and virtual assistant features make finding businesses effortless. Integration capabilities have streamlined my workflow.
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="Arjun M"
+              title="Freelance Developer"
             />
           </div>
         </div>
@@ -67,13 +66,13 @@ function Avatar(props: Readonly<AvatarProps>) {
   return (
     <div className="flex items-center mt-8 space-x-3">
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
+       {/*  <Image
           src={props.image}
           width="40"
           height="40"
           alt="Avatar"
           placeholder="blur"
-        />
+        /> */}
       </div>
       <div>
         <div className="text-lg font-medium">{props.name}</div>

@@ -129,17 +129,17 @@ export function PopupWidget() {
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
+                        value="03268f5e-8b4c-4d5f-b57d-f5e1446961f2"
                         {...register("apikey")}
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value={`${userName} sent a message from arscon`}
                         {...register("subject")}
                       />
                       <input
                         type="hidden"
-                        value="Nextly Template"
+                        value="arscon Template"
                         {...register("from_name")}
                       />
                       <input
@@ -272,17 +272,6 @@ export function PopupWidget() {
                         className="text-xs text-center text-gray-400"
                         id="result"
                       >
-                        <span>
-                          Powered by{" "}
-                          <a
-                            href="https://Web3Forms.com"
-                            className="text-gray-600"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Web3Forms
-                          </a>
-                        </span>
                       </p>
                     </form>
                   )}
