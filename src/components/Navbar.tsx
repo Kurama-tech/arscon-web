@@ -13,13 +13,13 @@ export const Navbar = () => {
   //   "Contact Us",
   // ];
   const navigation = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "#home" },
     { name: "Features", href: "#features" },
     { name: "Contact Us", href: "#contact" },
   ];
 
   return (
-    <div className="w-full" id="navbar">
+    <div className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
@@ -29,9 +29,12 @@ export const Navbar = () => {
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <img
+                      <Image
                         src="/img/arscon.png"
                         alt="N"
+                        unoptimized
+                        width={24}
+                        height={24}
                         className="w-24 h-auto"
                       />
                     </span>

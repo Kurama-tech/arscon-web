@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Container } from "@/components/Container";
 
 export function Contactus() {
   return (
-    <div id="contact" className="relative ">
+    <div className="relative ">
       <Container>
+
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-0 mx-auto mt-0  lg:grid-cols-2">
           <div className="lg:col-span-1">
             <div
@@ -18,20 +20,16 @@ export function Contactus() {
                 height="400"
                 className="w-full"
                 style={{ border: 0 }}
-                allowfullscreen=""
+                allowFullScreen={true}
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
           <div className="flex flex-col w-full -mt-2 -ml-3 lg:ml-0">
             <div className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 ">
               <div>
-                <img
-                  src="/img/location-icon.svg"
-                  alt="loc"
-                  className="w-12 h-auto"
-                />
+                <MapPinIcon className="w-8 text-indigo-500"/>
               </div>
               <div className="ms-4">
                 7, KNO-12/10, LBS NAGAR, K. NARAYANAPURA, Kothanur, Bangalore
@@ -40,21 +38,13 @@ export function Contactus() {
             </div>
             <div className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 ">
               <span>
-                <img
-                  src="/img/phone-icon.svg"
-                  alt="phone"
-                  className="w-8 h-auto"
-                />
+                <PhoneIcon className="w-8 text-indigo-500" />
               </span>
               <span className="ms-4">+91 8884646746</span>
             </div>
             <div className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 ">
               <span>
-                <img
-                  src="/img/email-icon.svg"
-                  alt="email"
-                  className="w-8 h-auto"
-                />
+                <EnvelopeIcon className="w-8 text-indigo-500" />
               </span>
               <span className="ms-4">info@arscon.co.in</span>
             </div>

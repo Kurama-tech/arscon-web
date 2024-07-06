@@ -9,23 +9,44 @@ import { Cta } from "@/components/Cta";
 import { Contactus } from "@/components/Contactus";
 
 import { benefitOne, benefitTwo } from "@/components/data";
+import Head from "next/head";
 export default function Home() {
   return (
     <Container>
-      <Hero />
-      <SectionTitle
-        preTitle="Arscon Benefits"
-        title=" Why should you use Arscon Connect">
-        Arscon is a cutting-edge business directory app designed to
-        revolutionize the way you discover, connect with, and manage business
-        interactions. Harnessing the power of artificial intelligence,
-        BusinessFinder AI offers personalized recommendations, intelligent
-        search capabilities, and seamless integration with various services to
-        provide an unparalleled user experience.
-      </SectionTitle>
+      <Head>
+        <title>Arscon - AI-Powered Business Directory</title>
+        <meta name="title" content="Arscon - AI-Powered Business Directory" />
+        <meta name="description" content="Discover, connect, and manage business interactions effortlessly with Arscon. Harness the power of AI for personalized recommendations, intelligent search, and seamless integration." />
 
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.arscon.co.in/" />
+        <meta property="og:title" content="Arscon - AI-Powered Business Directory" />
+        <meta property="og:description" content="Discover, connect, and manage business interactions effortlessly with Arscon. Harness the power of AI for personalized recommendations, intelligent search, and seamless integration." />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.arscon.co.in/" />
+        <meta property="twitter:title" content="Arscon - AI-Powered Business Directory" />
+        <meta property="twitter:description" content="Discover, connect, and manage business interactions effortlessly with Arscon. Harness the power of AI for personalized recommendations, intelligent search, and seamless integration." />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="Arscon, business directory, AI-powered directory, business discovery, intelligent search, personalized recommendations" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div id="home"><Hero /></div>
+      <div id="features">
+        <SectionTitle
+          preTitle="Arscon Benefits"
+          title=" Why should you use Arscon Connect">
+          Arscon is a cutting-edge business directory app that uses AI to revolutionize business discovery and management. It offers personalized recommendations, intelligent search, and seamless integration for an unparalleled user experience.
+        </SectionTitle>
+
+        <Benefits data={benefitOne} />
+        <Benefits imgPos="right" data={benefitTwo} />
+      </div>
+
 
       {/*<SectionTitle
         preTitle="Watch a video"
@@ -47,7 +68,17 @@ export default function Home() {
 
       <Testimonials />
 
-      <Contactus />
+
+      <div id="contact">
+
+        <SectionTitle
+          preTitle="Contact us"
+          title="Reach out to us at any time"
+
+        />
+
+
+        <Contactus /></div>
       {/* <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.

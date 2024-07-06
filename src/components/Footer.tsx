@@ -8,34 +8,35 @@ export function Footer() {
   // const legal = ["Terms", "Privacy", "Legal"];
 
   const navigation = [
-    { name: "Home", href: "#navbar" },
+    { name: "Home", href: "#home" },
     { name: "Features", href: "#features" },
     { name: "Contact Us", href: "#contact" },
   ];
   return (
     <div
       id="contact"
-      className="relative border-t border-solid border-indigo-500">
+      className="relative border-t border-solid border-gray-300">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-0 mx-auto mt-0 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-2">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-0 mx-auto mt-0 lg:grid-cols-2">
           <div className="lg:col-span-1">
             <div>
               {" "}
               <Link
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                {/* <Image
+                <Image
                   src="/img/arscon.png"
                   alt="N"
                   width="16"
                   height="16"
-                  className="w-16 h-auto"
-                /> */}
-                <img
+                  unoptimized
+                  className="w-20 h-auto"
+                />
+                {/* <img
                   src={"/img/arscon.png"}
                   className="w-20 h-auto"
                   alt="logo"
-                />
+                /> */}
                 <span className="font-bold text-indigo-500 dark:text-gray-100">
                   Arscon Connect
                 </span>
