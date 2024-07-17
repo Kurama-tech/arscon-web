@@ -11,6 +11,7 @@ export function Footer() {
     { name: "Home", href: "#home" },
     { name: "Features", href: "#features" },
     { name: "Contact Us", href: "#contact" },
+    { name: "Privacy Policy", href: "/privacy"}
   ];
   return (
     <div
