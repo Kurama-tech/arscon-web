@@ -6,6 +6,14 @@ const nextConfig = {
             source: '/privacy',
             destination: '/static/privacy.html',
           },
+          {
+            source: '/terms',
+            destination: '/static/terms.html',
+          },
+          {
+            source: '/returns',
+            destination: '/static/returns.html',
+          },
         ];
       },
 };
